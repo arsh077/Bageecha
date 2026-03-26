@@ -39,7 +39,8 @@ export default function App() {
       <div className="relative min-h-screen w-full bg-[var(--color-cream)] text-[var(--color-forest)] overflow-x-hidden">
         <ClickEffect />
         {/* Sound Layer */}
-        <audio ref={audioRef} loop src="https://cdn.pixabay.com/download/audio/2022/02/07/audio_c6f2a74c23.mp3?filename=forest-with-small-river-birds-and-nature-field-recording-6735.mp3" />
+        {/* Added a more reliable soothing cafe/nature music track */}
+        <audio ref={audioRef} loop src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=birds-singing-calm-river-nature-ambient-sound-80313.mp3" preload="auto" />
         <button 
           onClick={toggleAudio}
           className={`fixed bottom-6 right-6 z-40 bg-[var(--color-dark-garden)] text-[var(--color-beige)] p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 ${isMuted ? 'animate-pulse ring-4 ring-[var(--color-leaf)]/50' : ''}`}
